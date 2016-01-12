@@ -17,7 +17,7 @@ def sum_num(num):
 
 
 def main():
-    test_numbers=[4,12,145,12435,8765903]
+    test_numbers=[4,12,145,54321,8765903]
     for i in range(5):
          print("Test {0} Input {1}. Output: {2}".format(i,test_numbers[i],sum_num(test_numbers[i])))
 
