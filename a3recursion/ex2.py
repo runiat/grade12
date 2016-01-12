@@ -10,7 +10,7 @@ def fibonacci(n):
     '''
 
     # base case
-    pass
+    return 0
 
 
     # recusrive case
@@ -18,6 +18,6 @@ def fibonacci(n):
 
 def main():
     # test your program here
-    pass
+    print(fibonacci(4))
 
 main()
