@@ -5,9 +5,14 @@
 import turtle
 
 def tree(branchLen,t):
+    ''' This recursice function will draw a tree recursivly.
+    :param branchLen: an int. the length of a branch
+    :param t:  the turtle object
+    :return: None
+    '''
     #base case. stop drawing if the branch length is less than 5
 
-    # recursive case: if branch length is more than 5, go forward, draw the right and left side and go back
+    #recursive case: if branch length is more than 5, go forward, draw the right and left side and go back
     if branchLen > 5:
         # go forward
         t.forward(branchLen)
@@ -30,6 +35,7 @@ def main():
     t.backward(100)
     t.down()
     t.color("green")
+
     # call the tree function
     tree(75,t)
     myWin.exitonclick()
