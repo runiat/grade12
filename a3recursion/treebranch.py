@@ -14,7 +14,7 @@ def tree(branchLen,t):
 
     #recursive case: if branch length is more than 5, go forward, draw the right and left side and go back
     if branchLen > 5:
-        # go forward
+        # go forwarda
         t.forward(branchLen)
         # draw a tree on the right side
         t.right(20)
