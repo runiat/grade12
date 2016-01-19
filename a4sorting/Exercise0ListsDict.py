@@ -2,8 +2,9 @@
 # Exercises Lists and Dictionaries
 # lists use [value,value,...], dictionaries use {key1:value,key2:value}
 
-# Exercise 1
 
+
+# Exercise 1
 inventory = {
     'gold' : 500,
     'pouch' : ['flint', 'twine', 'gemstone'],
@@ -13,6 +14,9 @@ inventory = {
 
 
 #Exersise 2
+
+
+
 
 
 
@@ -32,8 +36,9 @@ prices = {
 }
 
 
-#Exercise 4
 
+
+#Exercise 4
 lloyd = {
   "name": "Lloyd",
   "homework": [90.0,97.0,75.0,92.0],
