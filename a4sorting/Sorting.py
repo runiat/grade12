@@ -84,27 +84,23 @@ def mergeSort(n):
         k=0 # index for n
         while i < len(lefthalf) and j < len(righthalf):
             if lefthalf[i] < righthalf[j]:
-                print(n,"update n[{0}] to {1}".format(k,lefthalf[i]))
                 n[k]=lefthalf[i]
                 i=i+1
             else:
-                print(n,"update n[k] to",righthalf[j])
                 n[k]=righthalf[j]
                 j=j+1
             k=k+1
-            print(n,i,j,k)
 
         while i < len(lefthalf):
-            print("inwhile lefthalf update n[k] to",lefthalf[i])
             n[k]=lefthalf[i]
             i=i+1
             k=k+1
 
         while j < len(righthalf):
-            print("inwhile righthalf update n[k] to",righthalf[j])
             n[k]=righthalf[j]
             j=j+1
             k=k+1
+
 
 def main():
     test1=[4,7,5,2,8]
