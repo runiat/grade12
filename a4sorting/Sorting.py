@@ -1,5 +1,5 @@
-# sorting algorithms
-
+#Name: ICS4U class
+# Date: Jan 18, 2016
 
 def selectionSort(n):
     '''
@@ -42,7 +42,6 @@ def bubbleSort(n):
             print(n)
 
 
-# insertion sort
 
 def insertionSort(n):
      ''' This method will take a small sub list which is sorted, and add the next element in the correct position of the sorted lsit.
@@ -91,11 +90,13 @@ def mergeSort(n):
                 j=j+1
             k=k+1
 
+        #add the rest of the lefthalf to n
         while i < len(lefthalf):
             n[k]=lefthalf[i]
             i=i+1
             k=k+1
 
+        #add the rest of the righthalf to n
         while j < len(righthalf):
             n[k]=righthalf[j]
             j=j+1
