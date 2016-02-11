@@ -1,0 +1,9 @@
+Game of Life Overview
+
+Our "Game of Life" board will be an n-by-n grid of square cells, each of which can be either "alive" or "dead". A given cell's neighbors are those cells directly above, below, left, or right of the cell, plus with the cells diagonally adjacent to it (the cells touching its diagonals). Each cell changes from one time step to the next according to the following rules:
+
+Any living cell with fewer than two living neighbors dies.
+Any living cell with exactly two or exactly three living neighbors remains alive.
+Any living cell with more than three living neighbors dies.
+Any dead cell with exactly three living neighbors becomes alive.
+These extremely simple rules give rise to some incredibly complex and beautiful patterns, as illustrated here:

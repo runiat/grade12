@@ -16,6 +16,7 @@ def selectionSort(n):
             # if the next value is lower than minpos's value, update minpos
             if n[j] < n[minpos] :
                 minpos=j
+        print(" pass {0}:".format(i), n)
 
         #Swap the values at index i and minpos
         temp=n[i]
@@ -34,12 +35,15 @@ def bubbleSort(n):
     # add comments to explain how i, j, and temp are being used.
     # add comments to demonstrate your understanding of how bubble sort works.
     for i in range(0,len(n)):
+
         for j in range(0,len(n)-i-1):
+            numcomparisons=0
             if n[j] > n[j+1] :
+                numcomparisons+=1
                 temp=n[j]
                 n[j]=n[j+1]
                 n[j+1]=temp
-            print(n)
+        print(" pass {0}:".format(i),n)
 
 
 
@@ -58,6 +62,7 @@ def insertionSort(n):
              n[pos]=n[pos-1]
              pos-=1
          n[pos]=value
+         print(" pass {0}:".format(i),n)
 
 
 
@@ -104,10 +109,12 @@ def mergeSort(n):
 
 
 def main():
-    test1=[4,7,5,2,8]
-    print(test1)
-    mergeSort(test1)
-    print(test1)
+    test1=[92,97,81,27,22,17,85,8,73,12]
+    test2=[31,83,81,7,56,71,43,63,13,49]
+    test3=[90,86,75,83,62,86,89,46,70,14]
+
+    insertionSort(test3)
+
 
 
 main()
