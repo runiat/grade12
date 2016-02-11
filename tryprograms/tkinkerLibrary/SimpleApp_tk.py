@@ -1,6 +1,9 @@
 # from http://sebsauvage.net/python/gui/#import
 #!/usr/bin/python
 # -*- coding: iso-8859-1 -*-
+#Date: Feb 11, 2016. Finished the tutorial.
+# Still having trouble thinking about hwo to make a grod.
+# It does not need buttons or labels. just need to color the grid and be able to add "pegs" or different colours.
 
 import tkinter
 
@@ -12,7 +15,7 @@ class SimpleApp_tk(tkinter.Tk):
         tkinter.Tk.__init__(self,parent)
         self.parent = parent
 
-        # I think this is bad form
+        # initialize the rest in another method.
         self.initialize()
 
     # initialize here. create any buttons, windows, ect
@@ -44,15 +47,23 @@ class SimpleApp_tk(tkinter.Tk):
         # only rezise horizontally. not vertically
         self.resizable(True,False)
 
+        #refinement-auto selsct on enter/click to make it easier to add new text.
+        self.entry.focus_set()
+        self.entry.selection_range(0, tkinter.END)
+
     def OnButtonClick(self):
         self.labelVariable.set( self.entryVariable.get()+" (You clicked the button)")
+        self.entry.focus_set()
+        self.entry.selection_range(0, tkinter.END)
 
     def OnPressEnter(self,event):
         self.labelVariable.set(self.entryVariable.get()+"You pressed enter !")
+        self.entry.focus_set()
+        self.entry.selection_range(0, tkinter.END)
 
 
 # create a main method if it is run from command line
 if __name__ == "__main__":
     app = SimpleApp_tk(None)
-    app.title('my application')
+    app.title('My Simple Application That practices using tkinter')
     app.mainloop()
